@@ -11,7 +11,7 @@ def divide(x, y):
     return x / y 
          
 while True:
-    print("\n--- simple calculator ---")
+    print("--- simple calculator ---")
     print("1. add")
     print("2. subtract")
     print("3. multiply")
@@ -25,7 +25,7 @@ while True:
         break
         
     elif choice in ("1", "2", "3", "4"):
-        
+
         try:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter the second number: "))
