@@ -8,9 +8,10 @@ def multiply(x,y):
     return(x * y)
 
 def divide(x,y):
-    return(x / y)
-
+    return(x / y) 
+         
 while True:
+
     print(" ---simple calculator ---")
     print("1. add")
     print("2. subtract")
@@ -35,4 +36,12 @@ while True:
         elif choice == "4":
             print(num1, "/", num2, "=", divide(num1,num2))
     else:
-        print("Invalid Choice. Please enter the givn numbers from 1 to 5.  ")
+        print("Invalid Choice. Please enter the given numbers from 1 to 5.")
+
+        try:
+                num1 = float(input("Enter first number:"))
+                num2 = float(input("Enter the second number: "))
+        except ValueError:
+            print("Cannot convert string to float")
+        except ZeroDivisionError:
+            print("Divide by zero error")
